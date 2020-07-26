@@ -11,9 +11,7 @@
         <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} RSS Feed" />
         {% endif %}
 
-        <!--[if IE]>
-            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
+        {% include 'analytics.html' %}
 </head>
 
 <body id="index" class="home">
@@ -94,7 +92,7 @@
                 <p>Powered by <a href="http://getpelican.com/">Pelican</a>. Theme <a href="https://github.com/blueicefield/pelican-blueidea/">blueidea</a>, inspired by the default theme.</p>
         </footer><!-- /#contentinfo -->
 
-{% include 'analytics.html' %}
+
 {% include 'piwik.html' %}
 {% include 'disqus_script.html' %}
 </body>
